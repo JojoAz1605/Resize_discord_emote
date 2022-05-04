@@ -11,3 +11,4 @@ Ensuite:
 1. Lancez le programme une fois pour que le dossier 'input' soit créé, ou faites le vous-même.
 2. Mettez vos images dans 'input'
 4. Lancez le programme et attendez qu'il ait finit de faire son travail
+5. Les images redimensionnées seront dans le dossier output
