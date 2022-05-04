@@ -2,6 +2,18 @@ from PIL import Image
 import glob
 import os
 
+if not os.path.isdir("input"):
+    print("Le dossier 'input' n'existe pas, création...")
+    os.mkdir("input/")
+    print("Veuillez maintenant mettre vos images à redimensionner dans 'input/' et redémarrer ce programme.")
+    exit()
+elif len(os.listdir('input/') ) == 0:
+    print("Dossier 'input/' vide, veuillez mettre des images dedans pour commencer. Une fois fait, redémarrez ce programme.")
+    exit()
+
+if not os.path.isdir("output"):
+    print("Le dossier 'output' n'existe pas, création...")
+    os.mkdir("output/")
 
 max_file_size = 256 * 1000
 list_images = glob.glob("input/*.png")
